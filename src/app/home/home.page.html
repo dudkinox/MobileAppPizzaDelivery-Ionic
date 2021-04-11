@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Shopping Pizza </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="openCart()">
+        <ion-badge *ngIf="cart.length > 0">{{ cart.length }}</ion-badge>
+        <ion-icon slot="icon-only" name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let cat of items" class="category-block">
+    <ion-row no-padding class="category-banner">
+      <ion-col
+        text-left
+        button
+        tappable
+        (click)="cat.expanded = !cat.expanded"
+        align-self-center
+      >
+        {{ cat.category }}
+      </ion-col>
+    </ion-row>
+
+    <ion-slides [options]="sliderConfig">
+      <ion-slide *ngFor="let product of cat.products">
+        <div *ngIf="cat.expanded">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>
+                {{ product.name }} - ${{ product.price }}
+              </ion-card-title>
+              <ion-card-content>
+                <img
+                  src="https://cdn.1112.com/1112/public/images/mobileapp/categories/pizza.png"
+                />
+                <ion-button expand="full" (click)="addToCart(product)"
+                  >เพิ่มตะกร้า</ion-button
+                >
+              </ion-card-content>
+            </ion-card-header>
+          </ion-card>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>

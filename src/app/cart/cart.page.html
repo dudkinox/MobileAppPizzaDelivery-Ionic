@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>ตะกร้าสินค้า</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of selectedItems" lines="inset">
+      {{ item.count }}x {{ item.name }} - {{ item.price |
+      currency:'USD':'symbol' }}
+      <ion-label slot="end" text-right
+        >{{ (item.price * item.count) | currency:'USD':'symbol' }}</ion-label
+      >
+    </ion-item>
+    <ion-item>
+      Total: <span slot="end">{{ total | currency:'USD':'symbol' }}</span>
+    </ion-item>
+  </ion-list>
+  <div align="center">
+    <ion-button color="success">Success</ion-button>
+  </div>
+</ion-content>
