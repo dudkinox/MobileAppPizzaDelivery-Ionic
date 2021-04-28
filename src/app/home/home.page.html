@@ -1,6 +1,10 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title> Shopping Pizza </ion-title>
+  <ion-toolbar color="tertiary">
+    <ion-title>
+      <img src="https://img.icons8.com/doodle/25/000000/pizza.png" />
+      Pizza
+      <img src="https://img.icons8.com/doodle/25/000000/pizza.png" />
+    </ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="openCart()">
         <ion-badge *ngIf="cart.length > 0">{{ cart.length }}</ion-badge>
@@ -10,7 +14,13 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="secondary">
+  <img
+    src="https://fs.hut1150.com/deals/roo-jai-spa-web-thai-11032021052438.jpg"
+    alt="roo-jai-spa-web-image"
+    class="w-100"
+  />
+
   <div *ngFor="let cat of items" class="category-block">
     <ion-row no-padding class="category-banner">
       <ion-col
@@ -22,6 +32,9 @@
       >
         {{ cat.category }}
       </ion-col>
+      <div class="button_footer">
+        <img src="https://img.icons8.com/dusk/30/000000/plus.png" />
+      </div>
     </ion-row>
 
     <ion-slides [options]="sliderConfig">
@@ -29,13 +42,13 @@
         <div *ngIf="cat.expanded">
           <ion-card>
             <ion-card-header>
-              <ion-card-title>
-                {{ product.name }} - ${{ product.price }}
+              <ion-card-title class="font_size">
+                {{ product.jumbo }} <br />
+                {{ product.name }} <br />
+                {{ product.price }} บาท
               </ion-card-title>
               <ion-card-content>
-                <img
-                  src="https://cdn.1112.com/1112/public/images/mobileapp/categories/pizza.png"
-                />
+                <img src="{{ product.img }}" />
                 <ion-button expand="full" (click)="addToCart(product)"
                   >เพิ่มตะกร้า</ion-button
                 >
