@@ -32,7 +32,12 @@
       >
         {{ cat.category }}
       </ion-col>
-      <div class="button_footer">
+      <div
+        class="button_footer"
+        button
+        tappable
+        (click)="cat.expanded = !cat.expanded"
+      >
         <img src="https://img.icons8.com/dusk/30/000000/plus.png" />
       </div>
     </ion-row>

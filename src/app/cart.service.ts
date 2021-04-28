@@ -58,7 +58,7 @@ export class CartService {
       ]
     },
     {
-      category: 'รองท้อง',
+      category: 'Appetizer',
       products: [
         { id: 28, name: 'ชิกเก้น นักเก็ตส์ 6 ชิ้น พร้อมซอสมะเขือเทศ', price: '79', img:'https://nathaponweb.files.wordpress.com/2016/10/itm116569.jpg'},
         { id: 29, name: 'ชิกเก้น นักเก็ตส์ 6 ชิ้น พร้อมน้ำจิ้มไก่', price: '79', img: 'https://nathaponweb.files.wordpress.com/2016/10/itm116570.jpg' },
