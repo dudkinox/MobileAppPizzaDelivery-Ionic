@@ -4,15 +4,15 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #1b1e21;
+  --ion-color-primary: #c48276;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
-  --ion-color-primary-tint: #4c8dff;
+  --ion-color-primary-shade: #000000;
+  --ion-color-primary-tint: #292929;
 
   /** secondary **/
-  --ion-color-secondary: hsl(12, 74%, 77%);
+  --ion-color-secondary: #ffce07;
   --ion-color-secondary-rgb: 61, 194, 255;
   --ion-color-secondary-contrast: #000000;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
@@ -20,7 +20,7 @@
   --ion-color-secondary-tint: #50c8ff;
 
   /** tertiary **/
-  --ion-color-tertiary: #5964cf;
+  --ion-color-tertiary: #f5aa1b;
   --ion-color-tertiary-rgb: 82, 96, 255;
   --ion-color-tertiary-contrast: #ffffff;
   --ion-color-tertiary-contrast-rgb: 255, 255, 255;
@@ -97,7 +97,7 @@
     --ion-color-secondary-shade: #46b0e0;
     --ion-color-secondary-tint: #62ceff;
 
-    --ion-color-tertiary: #6a64ff;
+    --ion-color-tertiary: #f5aa1b;
     --ion-color-tertiary-rgb: 106, 100, 255;
     --ion-color-tertiary-contrast: #ffffff;
     --ion-color-tertiary-contrast-rgb: 255, 255, 255;
@@ -234,7 +234,7 @@
   }
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Mali&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap");
 * {
-  font-family: "Mali";
+  font-family: "Mitr";
 }

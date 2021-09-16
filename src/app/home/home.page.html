@@ -1,10 +1,6 @@
 <ion-header>
   <ion-toolbar color="tertiary">
-    <ion-title>
-      <img src="https://img.icons8.com/doodle/25/000000/pizza.png" />
-      123 Pizza
-      <img src="https://img.icons8.com/doodle/25/000000/pizza.png" />
-    </ion-title>
+    <ion-title> SQUEEZE 2.0 </ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="openCart()">
         <ion-badge *ngIf="cart.length > 0">{{ cart.length }}</ion-badge>
@@ -16,7 +12,7 @@
 
 <ion-content color="secondary">
   <img
-    src="https://fs.hut1150.com/deals/roo-jai-spa-web-thai-11032021052438.jpg"
+    src="https://cdn.discordapp.com/attachments/886976260784390154/887981873022783519/1557717321410-59953567_2352755544760785_3750530962316853248_n.jpg"
     alt="roo-jai-spa-web-image"
     class="w-100"
   />
@@ -63,5 +59,14 @@
         </div>
       </ion-slide>
     </ion-slides>
+  </div>
+
+  <div align="center">
+    <ion-button
+      (click)="openCart()"
+      color="primary"
+      style="width: 250px; margin-top: 40px"
+      >คิดตัง</ion-button
+    >
   </div>
 </ion-content>
